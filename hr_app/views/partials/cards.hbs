@@ -1,0 +1,29 @@
+	<center>	
+
+		{{> navigation }}
+
+		<div class="container p-6 mt-3">
+			<div class="form">
+				<div class="mx-auto">
+					<div class="card text-center mx-auto">
+						<div class="card-body mx-auto">
+							<h4>Clabe: {{user.clabe}}</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card border-success m-3 " style="max-width: 18rem;">
+			<div class="card-header">Cards</div>
+
+			{{#each tarjetas}}
+			<div class="card-body text-success">
+				<p class="card-text">Card number: {{user.num_tarjeta_{{@index}} }} <br>
+					Expiration month: {{user.mes_exp_{{@index}} }} <br>
+					Expiration year: {{user.año_exp_{{@index}} }} <br>
+					Type of credit card: {{user.descripcion_{{@index}} }}
+				</p>
+			</div>
+			{{/each}}
+	</center>

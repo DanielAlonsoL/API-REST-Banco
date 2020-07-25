@@ -1,0 +1,33 @@
+	{{> navigation }}
+	<center>
+		<div class="container p-6 mt-3">
+			<div class="form">
+				<div class="mx-auto">
+					<div class="card text-center mx-auto">
+						<div class="card-body mx-auto">
+							<h4>Clabe: {{user.clabe}}</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card border-primary m-3" style="max-width: 18rem;">
+			<div class="card-header">Personal Information</div>
+			<div class="card-body text-primary">
+				<p class="card-text">Name: {{user.nombre}}<br>
+					Lastname: {{user.apellido_paterno}} {{user.apellido_materno}} <br>
+					RFC: {{user.rfc}}<br>
+					Account holder: {{user.titular_nombre}} {{user.titular_apellido_paterno}} {{user.titular_apellido_materno}}
+				</p>
+			</div>
+		</div>
+
+		<div class="card border-secondary m-3" style="max-width: 18rem;">
+			<div class="card-header">Address</div>
+			<div class="card-body text-secondary">
+				<p class="card-text">{{user.direccion}}</p>
+			</div>
+		</div>
+
+	</center>
